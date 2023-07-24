@@ -1,0 +1,57 @@
+body {
+    background-color: #dadada;
+}
+
+* {
+    font-family: Monsterat;
+}
+
+@font-face {
+    font-family: Harabara;
+    src: url('./fonts/Harabara.otf');
+}
+
+@font-face {
+    font-family: Monsterat;
+    src: url(./fonts/MONTSERRAT-REGULAR.OTF);
+}
+
+@font-face {
+    font-family: Monsterat;
+    src: url(./fonts/Montserrat-Bold.ttf);
+    font-weight: bold;
+}
+
+.redwood-color {
+    color: #8B191E;
+    font-family: Harabara;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#textOriginalLine1::before {
+    content: "TVC Film, Production";
+    top: 0;
+    left: 150%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#textOriginalLine2::before {
+    content: "Comercial, MV...";
+    top: 0;
+    left: 150%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.end-footer-bg {
+    background-color: #8C191E;
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js"></script>
+    <script src="https://vjs.zencdn.net/8.3.0/video.min.js"></script>
+    <script src="https://kit.fontawesome.com/cb9d22c56d.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="w-full h-full relative">
+    <script>
+        AOS.init();
+        var swiper = new Swiper(".mySwiper", {});
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary-1": "#8B191E",
+                    },
+                },
+            },
+        };
+    </script>
+    <div class="w-full h-full" id="mainContainer">
+        <header class="grid grid-cols-12 p-6 py-8">
+            <div data-aos="fade-right" data-aos-duration="800" class="logo col-span-6" id="headerLogo">
+                <img style="width: 128px;" src="./images/logo.png" alt="">
+            </div>
+            <div class="col-span-6">
+                <div class="w-full flex justify-end">
+                    <ul class="style-none flex justify-center">
+                        <li data-aos="fade-up" data-aos-duration="800" class="lg:mx-10 md:mx-6 text-xl font-bold cursor-pointer">
+                            <div class="hover:text-gray-500 duration-800 transition-all ease-in-out relative">
+                                <span>Home</span>
+                                <div data-aos="fade-up" data-aos-duration="800" class="w-full h-1 bg-primary-1"></div>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-duration="900" class="lg:mx-10 md:mx-6 text-xl font-bold cursor-pointer">
+                            <span class="hover:text-gray-500 duration-800 transition-all ease-in-out">About</span>
+                        </li>
+                        <li data-aos="fade-up" data-aos-duration="1000" class="lg:mx-10 md:mx-6 text-xl font-bold cursor-pointer">
+                            <span class="hover:text-gray-500 duration-800 transition-all ease-in-out">Contact</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section class="grid grid-cols-12 p-6 py-8 border-b-2 border-b-black mt-18">
+            <div class="col-span-12 truncate">
+                <div id="textOriginalLine1" data-aos="fade-left" data-aos-duration="1500" class="tracking-normal text-[150px] relative text-right w-full leading-[0.7em] transition-all	redwood-color font-bold">
+                    Red</div>
+                <div id="textOriginalLine2" data-aos="fade-left" data-aos-duration="1900" class="tracking-normal text-[150px] relative text-right w-full leading-[0.7em] transition-all	redwood-color font-bold">
+                    woods</div>
+            </div>
+            <div data-aos="fade-right" data-aos-duration="1000" class="col-span-12 h-full flex items-end justify-end mt-4">
+                <a class="text-2xl underline underline-offset-4" href="mailto:redwood.we@gmail.com">redwood.we@gmail.com</a>
+            </div>
+        </section>
+        <section class="grid grid-cols-12 h-56 p-6 mt-5">
+            <div data-aos="fade-down" data-aos-duration="800" class="col-span-6 h-full flex items-start">
+                <h2 class="text-[140px] redwood-color text-left w-full leading-[1em]">
+                    Projects
+                </h2>
+            </div>
+            <div data-aos="fade-down" data-aos-duration="800" class="col-span-6 h-full flex items-start justify-end">
+                <div class="max-w-xl">
+                    <p class="text-2xl text-right w-full">
+                        Redwood team was established operating in the field of media and production. Commercial production products such as TVC Filming, Product Photography, Design and many other items,...
+                    </p>
+                </div>
+            </div>
+
+        </section>
+        <!-- <section class="w-full p-6 flex justify-center items-center">
+            <img data-aos="fade-up" data-aos-duration="500" data-aos-offset="-100" data-aos-easing="ease-in-sine" src="./images/img6.jpg" alt="" srcset="">
+        </section> -->
+        <!-- <section class="w-full p-6 flex justify-end items-center">
+            <div data-aos="fade-left" data-aos-duration="1000" class="max-w-xl">
+                <span class="text-2xl text-left">
+                    LÊ MINH là một đạo diễn, nhà thiết kế & nghệ sĩ tài ba đang hoạt động tại Hà Nội. Gần đây, ông đã
+                    được
+                    Tạp chí Screen-Eye bình chọn là một trong “10 đạo diễn thương mại tài năng nhất”.
+                </span>
+            </div>
+        </section> -->
+        <!-- <section class="w-full p-6">
+            <h2 data-aos="fade-right" data-aos-duration="800" class="tracking-normal text-[130px] text-left w-full leading-[1em]">Tác phẩm</h2>
+            <h2 data-aos="fade-right" data-aos-duration="1000" class="tracking-normal text-[130px] text-left w-full leading-[1em]">mới nhất</h2>
+        </section> -->
+        <section class="w-full p-6">
+            <div class="grid grid-cols-12 gap-24">
+                <div class="col-span-6" id="imageSlide1">
+                </div>
+                <div class="col-span-6" id="imageSlide2">
+                </div>
+                <div class="col-span-12" id="imageSlide3">
+                </div>
+            </div>
+        </section>
+        <!-- <section class="w-full p-6">
+            <div data-aos="fade-right" data-aos-duration="800" class="logo col-span-6" id="headerLogo">
+                <img style="width: 128px;" src="./images/logo.png" alt="">
+            </div>
+        </section> -->
+        <footer class="w-full p-6">
+            <div class="grid grid-cols-12 flex items-end">
+                <div class="col-span-5">
+                    <div class="flex flex-col">
+                        <div class="col-span-12 truncate">
+                            <div id="textOriginalLine1" data-aos="fade-left" data-aos-duration="1500" class="tracking-normal text-[55px] relative text-left w-full leading-[0.7em] transition-all redwood-color font-bold pb-5">
+                                Redwood Team
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col" data-aos="fade-left" data-aos-duration="1500">
+                        <span>
+                            Chính sách Quyền riêng tư
+                        </span>
+                        <span>
+                            thuộc về © Redwood team
+                        </span>
+                    </div>
+                </div>
+                <div class="col-span-7">
+                    <div class="flex justify-end items-center">
+                        <div class="flex hover:animate-bounce">
+                            <a class="text-xl text-white font-medium bg-primary-1 p-2 rounded-full" href="http://">Behance</a>
+                        </div>
+                        <div class="flex ml-4 hover:animate-bounce">
+                            <a class="text-xl text-white font-medium bg-primary-1 p-2 rounded-full" href="http://">Youtube</a>
+                        </div>
+                        <div class="flex ml-4 hover:animate-bounce">
+                            <a class="text-xl text-white font-medium bg-primary-1 p-2 rounded-full" href="http://">Fanpage</a>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="800" class="col-span-12 end-footer-bg text-white flex justify-center items-center p-6 mt-12">
+                    <span>THANKS FOR ATTENTION</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="absolute top-0 left-0 min-w-[100vw] min-h-[100vh] bg-gray-500 hidden" id="videoViewContainer">
+        <div class="w-100 flex justify-between p-6">
+            <i class="fa-solid fa-up-right-and-down-left-from-center text-2xl text-white cursor-pointer"></i>
+            <i class="fa-solid fa-xmark text-2xl text-white cursor-pointer" onclick="toggleVideoView()"></i>
+        </div>
+        <div class="p-6 w-full h-full">
+            <div data-aos="fade-right" data-aos-duration="800" class="logo col-span-6" id="headerLogo">
+                <img style="width: 128px;" src="./images/logo.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
