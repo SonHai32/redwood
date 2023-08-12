@@ -57,3 +57,7 @@ body {
 .end-footer-bg {
     background-color: #8C191E;
 }
+
+img {
+    object-fit: cover;
+}
